@@ -1,0 +1,20 @@
+<Context>
+    <Resource
+            name="jdbc/gym_db"
+            auth="Container"
+            type="javax.sql.DataSource"
+            maxTotal="20"
+            maxIdle="10"
+            maxWaitMillis="1000"
+            username="root"
+            password="@Mompati123"
+            driverClassName="com.mysql.cj.jdbc.Driver"
+            url="jdbc:mysql://localhost:3306/gym_db?useSSL=false&amp;serverTimezone=UTC"
+            validationQuery="SELECT 1"
+            validationQueryTimeout="5"
+            testOnBorrow="true"
+            testWhileIdle="true"
+            timeBetweenEvictionRunsMillis="30000"
+            minEvictableIdleTimeMillis="300000"
+    />
+</Context>
